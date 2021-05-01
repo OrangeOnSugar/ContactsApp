@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#3B67FC">
+        <Button
+            android:id="@+id/closeadd"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="◀"
+            android:textSize="35dp"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:text="Добавить контакт"/>
+
+        <Button
+            android:id="@+id/addcontact"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="✓"
+            android:layout_alignParentRight="true"
+            android:textSize="35dp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TableRow android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="ФИО"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/FIOadd"
+                android:maxLength="60"
+                android:inputType="text"
+                android:hint="Пупкин Василий Васильевич"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Номер телефона"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"/>
+
+            <com.github.pinball83.maskededittext.MaskedEditText
+                android:id="@+id/nomeradd"
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:inputType="number"
+                app:mask="+7 (***) ***-**-**"
+                app:notMaskedSymbol="*"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Уникальный код"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"/>
+
+            <EditText
+                android:id="@+id/uniqnom"
+                android:layout_width="288dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

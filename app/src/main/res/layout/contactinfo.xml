@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#3B67FC">
+
+        <Button
+            android:id="@+id/closeinfo"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="◀"
+            android:textSize="35dp"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/transparent"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:text="О контакте"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/Iniciald"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"
+        android:text="S"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:textSize="110dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/route1"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/route2">
+
+            <TableRow android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="ФИО"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/FIOinfo"
+                    android:enabled="false"
+                    android:layout_margin="10dp"
+                    android:layout_width="288dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Номер телефона"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"/>
+
+                <EditText
+                    android:id="@+id/nomerinfo"
+                    android:layout_width="288dp"
+                    android:enabled="false"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Уникальный код"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"/>
+
+                <EditText
+                    android:id="@+id/uniqnominfo"
+                    android:layout_margin="10dp"
+                    android:layout_width="288dp"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/changecontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✎"
+                    android:textSize="25dp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@android:color/transparent"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+
+                <Button
+                    android:id="@+id/dropcontact"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@android:color/transparent"
+                    android:text="✗"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="25dp" />
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/openchat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Открыть диалог"
+        android:layout_gravity="center"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:background="@drawable/route1"
+        style="@style/TextAppearance.AppCompat.Button"/>
+
+</LinearLayout >

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1039125852994",
+    "firebase_url": "https://contactsbyorange.firebaseio.com",
+    "project_id": "contactsbyorange",
+    "storage_bucket": "contactsbyorange.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039125852994:android:0fa4598ba8b239cceecedb",
+        "android_client_info": {
+          "package_name": "com.example.contacts_by_orange"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039125852994-dcb1hs57nptdir18juqpgd8fhua7b5bp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.contacts_by_orange",
+            "certificate_hash": "100de914ce6f26b783a6dccf4fd74e751c8c940e"
+          }
+        },
+        {
+          "client_id": "1039125852994-s6md75q3qq9cc0u91v8j5hqvnkr368b9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB4FyrSZ8T4SDfeCwI_vX-lQQDC7J5FX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039125852994-s6md75q3qq9cc0u91v8j5hqvnkr368b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

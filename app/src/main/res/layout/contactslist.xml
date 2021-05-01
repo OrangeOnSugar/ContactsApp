@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<TableRow>
+    <TextView
+        android:id="@+id/IconName"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:background="@drawable/route"
+        android:text="^_^"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_weight="0"
+        android:textSize="21dp"></TextView>
+
+    <TextView
+        android:id="@+id/FIO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:maxWidth="330dp"
+        android:layout_marginVertical="15dp"
+        android:text="Vasenin Stanislav Vladimirovich"
+        android:textColor="@android:color/black"
+        android:textSize="30px">
+
+    </TextView>
+</TableRow>
+    </TableLayout>
+
+</LinearLayout>
